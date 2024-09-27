@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+    <link rel="stylesheet" href="css/pw.css">
+    <link rel="icon"  href="img/logo.png">
+</head>
+<body>
+        <header>
+            <div class="bar">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <h1>PLAY</h1>
+                </div>
+                <button id="btn-open"> <img src="img/menu.png"></button>
+          </div>
+       
+    <nav class="nav">
+        <ul>
+            <li> <a href="index.html"><img src="img/home.png" alt="inicio">Inicio</a></li>
+            <li> <a href="juegos.html"><img src="img/mando.png" alt="Juegos">Juegos</a></li>
+            <li> <a href=""><img src="img/carrito.png" alt="carrito">Tienda</a></li>
+            <li> <a href="contacto.html"><img src="img/contacto.png" alt="contacto">Contactos</a></li>
+            <button id="modo-oscuro"><img src="img/modo.png"></button>
+        </ul>
+     </nav>
+
+</header>
+
+<article class="titulo">
+     <h1>Contacto</h1>
+ </article>
+
+  <form id="formContacto" action="">
+          <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" autocomplete="off" value="" placeholder="Ingrese su Nombre" required>
+
+          <label for="apellidos">Apellidos *</label>
+            <input type="text" id="apellidos"autocomplete="off" value="" placeholder="Ingrese su Apellido" required>
+
+          <label for="telefono">Teléfono *</label>
+            <input type="number" id="telefono" autocomplete="off" value="" placeholder="Ingrese su Teléfono" required>
+
+          <label for="email">E-mail *</label>
+            <input type="email" id="email" autocomplete="off" value="" placeholder="Ingrese su E-mail" required> 
+        
+          <label for="inputCaptcha">INGRESAR CAPCHA</label>
+
+        <div class="captcha">
+            <span id="captcha"></span>
+            <button type="button" id="generarNuevoCaptcha">Generar nuevo captcha</button>
+        </div>
+         <input type="text" id="inputCaptcha" autocomplete="off" placeholder="Ingrese el captcha" required>
+            <button>ENVIAR</button>
+             <div id="mensaje" class="mensaje"></div>
+
+  </form>
+
+    <footer>
+        <h2><span>Síguenos</span></h2>
+         <img src="img/facebook.png" alt="facebook">
+         <img src="img/twitter.png" alt="twitter">
+         <img src="img/instagram.png" alt="instagram">
+    </footer>
+        
+    <script src ="js/scriptContacto.js"></script>
+</body>
+</html>

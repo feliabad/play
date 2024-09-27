@@ -1,0 +1,245 @@
+
+body {
+    background-color: rgb(255, 188, 188);
+    margin: 0%; /*elimina el margen predeterminado del body*/
+    padding: 0%;
+}
+
+/*empieza el header de index html*/
+
+/*modo oscuro*/
+body.modo {
+    color: white;                     
+    background-color: rgb(31, 31, 31);
+}
+
+.bar{   /*header*/
+    background-color: rgb(214, 9, 9);   /*color del nav de header*/
+    justify-content: space-between;      /*boton de menu se ponga a la derecha*/
+}
+
+header .logo, .bar{
+    display: flex;
+    align-items: center;  /*para que el logo este centrado*/
+}
+
+header img{
+    height:45px;
+    width:65px;   /*altura (h) y ancho (w) de la img logo*/
+}
+
+.nav{
+    display: none; /*para que se abra y cierre el menu*/
+    background-color: rgb(255, 204, 204);
+    border-width: 20px;
+    border-style: solid;
+    border-color: rgb(160, 0, 0);
+    
+}
+
+.nav.open{
+    display: block;
+}
+
+.nav ul {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+}
+.nav li {
+     list-style: none;
+}
+
+.nav a{
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 16px;
+    color: black;
+}
+
+.nav img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#btn-open{
+    margin-right: 16px;
+    height: 50px;
+}
+
+#btn-open img{
+    width: 75%;
+}
+
+/*aca termina el header y empieza el article*/
+
+article h1{
+     font-family:Arial, Helvetica, sans-serif;
+     text-align: left;
+     padding-left: 5%;
+}
+
+.texto, article p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1%;
+    text-align: center;
+}
+
+span{
+    font-weight: bold;
+}
+
+ .descuento h3{
+    color: rgb(196, 0, 0);
+    padding-left: 2%;
+ }
+
+ .descuento img{
+    height: 50%;
+    width: 30%;
+    margin: 3%;
+    border: 5px solid rgb(255, 139, 139);
+ }
+
+ table{
+    margin: 5%;
+    height: 15%;
+}
+
+ th{
+    background-color: rgb(148, 0, 0);
+    color: rgb(0, 0, 0);
+ }
+
+ td{
+    background-color: #da0000;
+ }
+ 
+article{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(214, 9, 9);
+    padding: 1%;
+}
+
+footer img{
+    padding: 1%;
+    height:40px;   /*altura (h) y ancho (w) de la img facebook,etc*/
+    width:40px;
+}
+
+/*juegos html*/
+article img{
+    height: 50%;
+    width:30%;
+    margin: 3%;
+    border: 5px solid rgb(255, 139, 139);
+}
+
+.lista{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 2%;
+}
+
+
+/*contacto html*/
+
+.titulo {
+    background-color: rgb(255, 122, 122);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+form {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 5%;
+    margin-top: 3%;
+    
+}
+
+input{
+    height: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;  /*para que la cajita del input se alarge*/
+    border-radius: 5px;
+}
+
+
+.enviar{
+    padding-right: 3%;
+}
+
+@media (width >= 768px) {
+
+/*index.html*/
+.nav{
+    display: block;
+    border: 10px solid rgb(255, 113, 113);
+}
+
+.nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav li {
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+#btn-open {
+    display: none;
+}
+
+table{
+        font-size: 25px;
+}
+
+/*juegos.html*/
+
+.descuento img, .juegos img{    /*descuento img de index.html y juegos img de juegos.html*/
+    margin: 2%;
+    height: 30%;
+    width:20%;
+} 
+
+article img{
+    height: 40%;
+    width:20%;
+}
+
+.lista{
+    text-align: center;
+}
+
+.lista li{
+   list-style: none;
+}
+
+/*contacto.html*/
+label{
+    padding-right: 5%;
+}
+
+.enviar{
+    padding-right: 1%;
+}
+
+}
